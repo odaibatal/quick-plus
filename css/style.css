@@ -52,6 +52,134 @@ body {
   color: #e2e8f0;
 }
 
+[data-theme="dark"] {
+  --bs-body-color: #e2e8f0;
+  --bs-body-bg: #0f172a;
+  --bs-body-emphasis-color: #f8fafc;
+  --bs-heading-color: #f8fafc;
+  --bs-link-color: #93c5fd;
+  --bs-link-hover-color: #bfdbfe;
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] body p,
+[data-theme="dark"] body span,
+[data-theme="dark"] body a,
+[data-theme="dark"] body label,
+[data-theme="dark"] body li,
+[data-theme="dark"] body small,
+[data-theme="dark"] body h1,
+[data-theme="dark"] body h2,
+[data-theme="dark"] body h3,
+[data-theme="dark"] body h4,
+[data-theme="dark"] body h5,
+[data-theme="dark"] body h6,
+[data-theme="dark"] body button,
+[data-theme="dark"] body input,
+[data-theme="dark"] body textarea {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .text-dark,
+[data-theme="dark"] .text-black,
+[data-theme="dark"] .text-body,
+[data-theme="dark"] .text-secondary {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .text-primary {
+  color: #93c5fd !important;
+}
+
+[data-theme="dark"] .text-success {
+  color: #4ade80 !important;
+}
+
+[data-theme="dark"] .text-danger {
+  color: #f87171 !important;
+}
+
+[data-theme="dark"] .text-info {
+  color: #7dd3fc !important;
+}
+
+[data-theme="dark"] .text-warning {
+  color: #fbbf24 !important;
+}
+
+[data-theme="dark"] .text-muted {
+  color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #111827 !important;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #111827 !important;
+}
+
+[data-theme="dark"] .bg-light-subtle {
+  background-color: #111827 !important;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .custom-card,
+[data-theme="dark"] .card-body,
+[data-theme="dark"] .card-header,
+[data-theme="dark"] .card-footer,
+[data-theme="dark"] .border,
+[data-theme="dark"] .border-top,
+[data-theme="dark"] .border-bottom,
+[data-theme="dark"] .border-start,
+[data-theme="dark"] .border-end {
+  background-color: #1f2937 !important;
+  border-color: #334155 !important;
+}
+
+[data-theme="dark"] .badge.bg-light {
+  background-color: rgba(255,255,255,0.08) !important;
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .btn-outline-secondary {
+  border-color: #475569 !important;
+  color: #e2e8f0 !important;
+  background: rgba(148,163,184,0.08) !important;
+}
+
+[data-theme="dark"] .btn-outline-secondary:hover,
+[data-theme="dark"] .btn-outline-secondary:focus,
+[data-theme="dark"] .btn-outline-secondary.active {
+  background: rgba(99,102,241,0.18) !important;
+  border-color: #8b5cf6 !important;
+  color: #8b5cf6 !important;
+}
+
+[data-theme="dark"] .btn-primary {
+  box-shadow: 0 4px 18px rgba(99,102,241,0.35) !important;
+}
+
+[data-theme="dark"] .btn-primary:hover,
+[data-theme="dark"] .btn-primary:focus {
+  box-shadow: 0 5px 22px rgba(99,102,241,0.45) !important;
+}
+
+[data-theme="dark"] .text-muted {
+  color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .text-dark,
+[data-theme="dark"] .text-black,
+[data-theme="dark"] .text-body,
+[data-theme="dark"] .text-secondary {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .text-primary {
+  color: #93c5fd !important;
+}
+
 /* الخطوط */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -76,8 +204,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-theme="dark"] .custom-navbar {
-  background: rgba(15,23,42,0.9);
+  background: rgba(15,23,42,0.95);
   border-bottom-color: rgba(51,65,85,0.6);
+}
+
+.navbar-toggler {
+  color: #64748b;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='currentColor' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+[data-theme="dark"] .navbar-collapse,
+[data-theme="dark"] .navbar-collapse.show,
+[data-theme="dark"] .navbar-collapse.collapse {
+  background: rgba(15,23,42,0.98) !important;
+}
+
+[data-theme="dark"] .navbar-toggler {
+  color: #e2e8f0 !important;
+  border-color: rgba(148,163,184,0.25) !important;
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+  opacity: 0.95 !important;
+}
+
+[data-theme="dark"] .navbar-nav .nav-link {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="dark"] .navbar-nav .nav-link.active,
+[data-theme="dark"] .navbar-nav .nav-link:hover {
+  color: #f8fafc !important;
 }
 
 .custom-navbar.scrolled {
@@ -120,6 +281,18 @@ h1, h2, h3, h4, h5, h6 {
 [data-theme="dark"] .nav-link.active {
   color: var(--primary-light);
   background: rgba(99,102,241,0.15);
+}
+
+[data-theme="dark"] .navbar-nav .nav-link {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .navbar-nav .nav-link.active {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .navbar-nav .nav-link:hover {
+  color: #f8fafc;
 }
 
 /* قسم البطل */
@@ -306,14 +479,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-theme="dark"] .btn-outline-secondary {
-  border-color: #334155;
-  color: #cbd5e1;
+  border-color: #475569;
+  color: #e2e8f0;
+  background: rgba(148,163,184,0.08);
 }
 
-.btn-outline-secondary:hover {
-  background: rgba(99,102,241,0.1);
-  border-color: var(--primary-color);
-  color: var(--primary-color);
+[data-theme="dark"] .btn-outline-secondary:hover {
+  background: rgba(99,102,241,0.18);
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+}
+
+[data-theme="dark"] .btn-primary {
+  box-shadow: 0 4px 18px rgba(99,102,241,0.35);
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  box-shadow: 0 5px 22px rgba(99,102,241,0.45);
 }
 
 /* الرسوم المتحركة */
@@ -616,6 +798,10 @@ h1, h2, h3, h4, h5, h6 {
     border-color: rgba(99,102,241,0.35);
   }
 
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='currentColor' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+
   .navbar-nav .nav-link {
     padding: 0.75rem 1rem;
   }
@@ -623,6 +809,19 @@ h1, h2, h3, h4, h5, h6 {
   .hero-section .section-label,
   .hero-section .lead,
   .hero-section h1 {
+    text-align: center;
+  }
+
+  .hero-section .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-section .btn-outline-secondary {
+    text-align: center;
+  }
+
+  .btn-outline-secondary {
     text-align: center;
   }
 
